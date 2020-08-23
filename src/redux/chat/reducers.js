@@ -26,7 +26,7 @@ const INITIAL_STATE={
     messages:[],
     messagescop:[],
     inputMessage:"",
-    showOptions:false
+  
 }
 
 export const chatReducer=(previousState=INITIAL_STATE,action)=>{
@@ -55,7 +55,19 @@ export const chatReducer=(previousState=INITIAL_STATE,action)=>{
             copiaState=action.payload
             return {...previousState,inputMessage:copiaState}
         case "SHOW_OPTIONS":
-            break;
+            const newMessages = previousState.messages.map((mes, index) => {
+                if (index === action.payload) {
+                  const newMessage = { ...mes };
+                  newMessage.showOptions = !newMessage.showOptions;
+                  return newMessage;
+                }
+                return mes;
+              });
+              console.log('Arreglo cambiado',newMessages)
+            return{
+                ...previousState,
+                messages:newMessages
+            }
         default:
             return previousState;
     }

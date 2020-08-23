@@ -25,7 +25,35 @@
 }
 .container{
   background-color:rgb(236, 236, 213);
-  height:700px;
 }
 
+.optionsMessage {
+  background-color: rgb(244, 253, 226);
+  padding: 1em;
+  border-radius: 4px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  box-shadow: 1px 1px 5px #000;
+  border:1px solid green;
+  top: 5%;
+  list-style:none;
+}
 
+.spinner{
+ margin-top: 10%;
+}
+
+.col{
+  padding:0px;
+}
+
+.formulario{
+  padding-left:65px;
+  padding-right:65px;
+  margin-top:30px;
+}
+
+.button{
+  padding-left:65px;
+}
