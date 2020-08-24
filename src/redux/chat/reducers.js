@@ -52,7 +52,7 @@ export const chatReducer = (previousState = INITIAL_STATE, action) => {
             return {
                 ...previousState,
                 messages: finalArray,
-                messagescop: newMessage,
+                messagescop: finalArray,
                 inputMessage: "",
             }
         case "DELETE":
