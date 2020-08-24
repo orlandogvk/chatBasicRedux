@@ -75,7 +75,6 @@ export const chatReducer = (previousState = INITIAL_STATE, action) => {
                 }
                 return mes;
             });
-            console.log('Arreglo cambiado', newMessages)
             return {
                 ...previousState,
                 messages: newMessages
