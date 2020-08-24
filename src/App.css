@@ -25,6 +25,7 @@
 }
 .container{
   background-color:rgb(236, 236, 213);
+  
 }
 
 .optionsMessage {
@@ -57,3 +58,24 @@
 .button{
   padding-left:65px;
 }
+.pcItem{
+  margin-right: 50%;
+}
+
+.containerMsg{
+  display:flex;
+  flex-direction: column;
+}
+
+#pc{
+  margin-top:20px;
+  margin-left: 880px;
+}
+
+#yo{
+  margin-top:15px;
+  margin-left: 20px;
+}
+
+
+

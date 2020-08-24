@@ -1,11 +1,13 @@
 //Action creators
 //Enviar mensaje
+
 export const sendMessage = (e) => {
     e.preventDefault();
     return {
       type: "SEND",
     };
   };
+
 
 //Borrar mensaje
 export const deleteMessage = (index) => {
